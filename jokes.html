@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes</title>
+  </head>
+  <body>
+    <main>
+    <header>
+      <h1>My Best Jokes</h1>
+    </header>
+    <h2>I have a stupid sense of humor, but these are still A+ jokes</h2>
+    <h3>Hover over the boxes to reveal text!</h3>
+    <section>
+        <table class="humour">
+            <th>Joke</th>
+            <th>Punchline</th>
+            <!-- row 1 -->
+            <tr><td class="punchlines">Mr. and Mrs. Bigger have a child. Out of the three of them, who is the
+          biggest?</td>
+            <td class="punchlines">The baby, of course. He's just a little bigger.</td></tr>
+            <!-- row 2 -->
+            <tr><td class="punchlines">What genre of music are national anthems?</td>
+            <td class="punchlines">Country.</td></tr>
+            <!-- row 3 -->
+            <tr><td class="punchlines">Two muffins are baking in an oven. One turns to the other and says, "Boy it sure is hot in here."</td>
+            <td class="punchlines">The other muffin turns and says, "AAAH! A talking muffin!"</td></tr>
+            <!-- row 4 -->
+            <tr><td class="punchlines">Two fish are swimming in a tank.</td>
+            <td class="punchlines">One turns to the other and says, "I sure hope YOU know how to drive this thing."</td></tr>
+            <!-- row 5 -->
+            <tr><td class="punchlines">Two men walk into a bar.</td>
+            <td class="punchlines">You would think at least one of them would've seen it.</td></tr>
+        </table>
+        <footer class="footnote">
+            <p class="scroll">Ever notice how many jokes use the number 2?...</p>
+            <p class="scroll">Two muffins, two fish, two men, two party system...</p>
+            <p class="scroll">If you laughed at any of these your sense of humor is as bad as mine...</p>
+            <p class="scroll">This was far harder to acomplish than I expected...</p>
+        </footer>
+    </section>
+</main>
+    <style>
+        body{
+            background-color: black;
+        }
+      main {
+        background-color: black; display: flex;
+        flex-direction: column; max-height:auto; max-width: absolute; overflow: hidden;
+      }
+      header,
+      h2 {
+        color: white; font-size: auto; text-align: center;
+      }
+      h3 {
+          color:forestgreen; text-align: center; font-size: small;
+        }
+        section {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        footer {
+            display: flex; flex-direction: row;
+        }
+        .footnote {
+        font-size: xx-small; color: whitesmoke; justify-content: space-between;
+          animation: wave 60s infinite linear;
+        }
+        .scroll {
+            margin-left: 1rem;
+        }
+      .humour, th, td {
+        color: chartreuse; border: solid 3px chartreuse;
+        border-collapse: collapse; padding: 1rem;
+      }
+      .punchlines {
+        color: black; text-align: center;
+      }
+      .punchlines:hover {
+        animation: present 2s infinite alternate;
+      }
+      @keyframes wave {
+        0% {
+            transform: translatex(100%);
+        }
+        100% {
+            transform: translatex(-100%);
+      }
+    }
+      @keyframes present {
+        0% {
+          color: chartreuse;
+        }
+        100% {
+          color: whitesmoke;
+        }
+      }
+    </style>
+  </body>
+</html>
